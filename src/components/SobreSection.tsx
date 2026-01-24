@@ -2,11 +2,11 @@
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
 
-export default function HeroSection() {
+export default function SobreSection() {
   return (
-    <section className="mt-12 md:mt-16">
+    <section className="p-4">
       <div className="grid grid-cols-1 md:grid-cols-12">
-        <div className="md:col-span-6 lg:col-span-7 place-self-center text-center sm:text-left">
+        <div className="md:col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-5xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-linear-to-br from-blue-500 via-blue-600 to-green-600">
               Olá, eu sou {" "}
@@ -34,7 +34,7 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="md:col-span-6 lg:col-span-5 mt-4 md:mt-0 place-self-center">
+        <div className="md:col-span-5 mt-4 md:mt-0 place-self-center">
           <div className="rounded-full bg-[#262626] w-87.5 h-87.5 flex items-center justify-center">
             <Image src="/images/marcelo.png" alt="Marcelo" width={300} height={300} />
           </div>
