@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className="md:col-span-6 lg:col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-5xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-linear-to-br from-blue-500 via-blue-600 to-green-600">
-              Olá, eu sou {" "}
+              Olá, eu sou
             </span>
             <br />
             <TypeAnimation
@@ -17,6 +17,8 @@ export default function HeroSection() {
                 'Marcelo',
                 1000,
                 'Web Developer',
+                1000,
+                'Full Stack Developer',
                 1000,
               ]}
               wrapper="span"
