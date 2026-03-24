@@ -1,4 +1,10 @@
-export default function TabButton({ active, selectTab, children }: { active: boolean; selectTab: () => void; children: React.ReactNode }) {
+interface TabButtonProps {
+    active: boolean;
+    selectTab: () => void;
+    children: React.ReactNode;
+}
+
+export default function TabButton({ active, selectTab, children }: TabButtonProps) {
     
     const buttonClass = active ? "text-white border-b border-blue-600" : "text-[#ADB7BE]";
     
