@@ -6,7 +6,7 @@ import ProjectTag from "./ProjectTag";
 const projects = [
     {
         id: 1,
-        imgUrl: 'portifolio/images/projects/bhPolaris.png',
+        imgUrl: '/portifolio/images/projects/bhPolaris.png',
         title: 'Bh polaris',
         description: 'Description for project one.',
         tag: ["All", "Web"],
@@ -15,7 +15,7 @@ const projects = [
     },
     {
         id: 2,
-        imgUrl: 'portifolio/images/projects/ye7.png',
+        imgUrl: '/portifolio/images/projects/ye7.png',
         title: 'Ye7',
         description: 'Description for project two.',
         tag: ["All", "Mobile"],
