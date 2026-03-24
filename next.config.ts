@@ -1,8 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/portifolio',
-  assetPrefix: '/portifolio/',
+  basePath: process.env.PAGES_BASE_PATH,
 };
 
-module.exports = nextConfig;
+export default nextConfig;
