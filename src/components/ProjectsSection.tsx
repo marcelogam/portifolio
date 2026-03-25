@@ -6,7 +6,7 @@ import ProjectTag from "./ProjectTag";
 const projects = [
     {
         id: 1,
-        imgUrl: '/images/projects/bhPolaris.png',
+        imgUrl: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/projects/bhPolaris.png`,
         title: 'Bh polaris',
         description: 'Description for project one.',
         tag: ["All", "Web"],
@@ -15,7 +15,7 @@ const projects = [
     },
     {
         id: 2,
-        imgUrl: '/images/projects/ye7.png',
+        imgUrl: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/projects/ye7.png`,
         title: 'Ye7',
         description: 'Description for project two.',
         tag: ["All", "Mobile"],
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
 
     return (
         <section>
-            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">Meus projetos</h2>
+            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-6">Meus projetos</h2>
             <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
                 <ProjectTag 
                     onClick={handleTagChange} 
@@ -53,7 +53,7 @@ export default function ProjectsSection() {
                     isSelected={tag === "Mobile"}
                 />
             </div>
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {filteredProjects.map(project => (
                     <ProjectCard
                         key={project.id}

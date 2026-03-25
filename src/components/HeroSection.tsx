@@ -38,7 +38,7 @@ export default function HeroSection() {
         </div>
         <div className="md:col-span-6 lg:col-span-5 mt-4 md:mt-0 place-self-center">
           <div className="rounded-full bg-[#262626] w-87.5 h-87.5 flex items-center justify-center">
-            <Image src="/images/marcelo.png" alt="Marcelo" width={300} height={300} />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/marcelo.png`} alt="Marcelo" width={300} height={300} />
           </div>
         </div>
       </div>
