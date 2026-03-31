@@ -1,5 +1,17 @@
 import { Resend } from 'resend';
 
+
+export async function GET(req: Request) {
+  try {
+
+    return Response.json('data');
+
+  } catch (error) {
+    console.log("CATCH ERROR:", error);
+    return Response.json({ error }, { status: 500 });
+  }
+}
+
 export async function POST(req: Request) {
   try {
 
